@@ -13,5 +13,5 @@ class TestUrl(TestCase):
 
         f = open("resources/payload.json")
         info = json.load(f)
-        resp = requests.post("https://us-central1-practicaml-cicd-363402.cloudfunctions.net/heart-disease", data=info, headers={'Content-Type': 'application/json'})
+        resp = requests.post("https://us-central1-practicaml-cicd-363402.cloudfunctions.net/heat-disease", data=info, headers={'Content-Type': 'application/json'})
         mock_post.assert_called_with("https://us-central1-practicaml-cicd-363402.cloudfunctions.net/heart-disease", data=info, headers={'Content-Type': 'application/json'})
